@@ -1,0 +1,12 @@
+node_modules/
+dist/
+release/
+.evidence/
+FILE-SHA256.json
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

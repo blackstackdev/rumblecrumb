@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#182528" />
+    <title>Rumblecrumb · Little monster. Big mess.</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23bdd479'/%3E%3Ccircle cx='13' cy='17' r='4' fill='%231b3130'/%3E%3Ccircle cx='27' cy='17' r='4' fill='%231b3130'/%3E%3Cpath d='M12 29Q20 34 28 29' fill='none' stroke='%231b3130' stroke-width='3'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <div id="world" aria-label="Three-dimensional tabletop city"></div>
+    <header class="brand">
+      <span class="brand-icon" aria-hidden="true">✷</span>
+      <div>
+        <h1>rumblecrumb</h1>
+        <p>KRĒˈĀDIV WORX · TABLETOP EDITION</p>
+      </div>
+    </header>
+    <section id="hud" class="hud" aria-label="Mission status" hidden>
+      <div class="mission-line">
+        <span id="district-tag" class="tag">01 / LUNCH BREAK</span
+        ><span id="shop-state">NOODLES SAFE ♡</span>
+      </div>
+      <p>Flatten the towers.<br /><em>Spare the noodle shop.</em></p>
+      <div class="meters">
+        <div>
+          <strong id="targets">0 / 4</strong><span>TOWERS TOPPLED</span>
+        </div>
+        <div><strong id="stomps">● ● ●</strong><span>STOMPS LEFT</span></div>
+      </div>
+    </section>
+    <nav class="tools" aria-label="Game options">
+      <button id="sound" aria-label="Enable sound">Sound off</button
+      ><button id="help" aria-label="How to play">Guide</button
+      ><button id="map" disabled>Districts</button
+      ><button id="pause" disabled>Pause</button
+      ><button id="reset" disabled aria-label="Restart level">↻ Restart</button>
+    </nav>
+    <div id="announcement" role="status" aria-live="polite"></div>
+    <section id="intro" class="overlay intro">
+      <div class="intro-card">
+        <p class="eyebrow">A TABLETOP MONSTER TOY</p>
+        <h2>Little monster.<br /><span>Big mess.</span></h2>
+        <p id="intro-description" class="description">
+          Three tiny districts. One hungry monster.<br />Flatten the towers.
+          Spare the noodle shop.
+        </p>
+        <div
+          id="district-list"
+          class="district-list"
+          aria-label="Choose a district"
+        ></div>
+        <p id="district-hint" class="district-hint"></p>
+        <button id="start" class="primary" disabled>
+          Building the tabletop…
+        </button>
+        <p class="fine">
+          Move with WASD / arrows · Space to stomp<br />Or click the tabletop to
+          walk. No rush.
+        </p>
+        <p id="save-status" class="save-status"></p>
+        <button id="clear-progress" class="text-button" hidden>
+          Reset saved progress</button
+        ><button id="undo-progress" class="text-button" hidden>
+          Undo progress reset
+        </button>
+      </div>
+    </section>
+    <section id="dialog" class="overlay" hidden>
+      <div class="dialog-card">
+        <p id="dialog-eyebrow" class="eyebrow"></p>
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-description"></p>
+        <button id="dialog-action" class="primary"></button
+        ><button id="dialog-close" class="text-button">Back to the city</button
+        ><button id="dialog-map" class="text-button" hidden>
+          Back to districts
+        </button>
+      </div>
+    </section>
+    <footer class="footer">
+      <span>v0.3.1 · 12 OCT 2026 · EARLY RELEASE</span
+      ><span>made of cardboard. fueled by noodles.</span>
+    </footer>
+    <div id="play-controls" hidden>
+      <div class="move-pad" aria-label="Movement buttons">
+        <button data-move="up" aria-label="Move up">↑</button
+        ><button data-move="left" aria-label="Move left">←</button
+        ><button data-move="down" aria-label="Move down">↓</button
+        ><button data-move="right" aria-label="Move right">→</button>
+      </div>
+      <button id="stomp-button" class="stomp-button">
+        STOMP <small>SPACE</small>
+      </button>
+      <div id="aim-info">Walk close. The ring shows your reach.</div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

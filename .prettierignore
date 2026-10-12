@@ -1,0 +1,9 @@
+node_modules
+dist
+release
+.evidence
+licenses
+LICENSE
+FILE-SHA256.json
+*.png
+*.gif
