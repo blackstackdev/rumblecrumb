@@ -1,5 +1,11 @@
 # Changelog
 
+## Browser hosting — 12 October 2026
+
+- Added a direct browser-play link on GitHub Pages for the existing 0.3.1 game.
+- Added Pages artifact upload from the tested Ubuntu build and deployment only after both Windows and Ubuntu CI succeed on main.
+- Documented hosted saves and deployment scope. Game code, visible version, and existing release downloads are unchanged.
+
 ## 0.3.1 — 12 October 2026 — GitHub early-release candidate
 
 - Adopted MIT for the original source and procedural visuals, with third-party notices and honest human/AI credits.

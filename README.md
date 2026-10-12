@@ -12,17 +12,23 @@ A tiny kaiju, a handmade cardboard city, and one noodle shop worth saving.
 
 A **Krēˈādiv Worx** game · **MIT** · **Early release 0.3.1**
 
+### [Play now in your browser](https://blackstackdev.github.io/rumblecrumb/)
+
+No download or account needed. Best played on a desktop browser with WebGL.
+
 </div>
 
 Meet **Crumb**. He's very small, very hungry, and spectacularly bad for cardboard real estate. Flatten four marked towers in three stomps. Keep the noodle shop standing. No timer. No account. Just a little mess you can make in your browser.
 
-## Play without building
+## Download for local play
 
 1. Download **Rumblecrumb-v0.3.1-playable.zip** from this repository's **Releases** page.
 2. Extract the whole folder. You'll need **Python 3** installed to run its local preview.
 3. On Windows, double-click **Start-Rumblecrumb.cmd**. Keep the console open while you play.
 
 The ZIP includes the built game: no Node or npm installation is needed to play. The launcher listens only on your computer, opens your default browser, and makes no startup or system-setting changes. It isn't a standalone Windows executable. More details: [player guide](docs/PLAY.md).
+
+The [hosted game](https://blackstackdev.github.io/rumblecrumb/) needs no Python or Node installation. Browser progress stays on that host and does not transfer from a local copy. [Hosting and deployment](docs/HOSTING.md).
 
 ## Run the source
 
